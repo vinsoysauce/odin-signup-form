@@ -1,6 +1,12 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
 *:not(dialog) {
   margin: 0;
 }
@@ -11,26 +17,41 @@
   }
 }
 
+@font-face {
+  font-family: "Norse";
+  src:
+    url("./norse/Norse.otf") format("norse1"),
+    url("./norse/Norsebold.otf") format("norse2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
+
 input, button, textarea, select {
   font: inherit;
 }
+
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
+
 p {
   text-wrap: pretty;
 }
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
+
 #root, #__next {
   isolation: isolate;
 }
@@ -40,22 +61,28 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
 }
 
-img {
-    height: 100%;
-}
-
 .background {
-
+    z-index: -1;
 }
 
 #first-column {
     display: flex;
+    flex-direction: column;
+}
+
+.odin-header {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 10%;
 }
 
 .odin-logo {
-    position: absolute;
+
 }
 
-#odin-header {
-    position: absolute;
+
+.odin-text {
+    font-family: "Norse", "serif";
+
 }
