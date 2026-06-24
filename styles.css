@@ -18,13 +18,8 @@
 }
 
 @font-face {
-  font-family: "Norse";
-  src:
-    url("./norse/Norse.otf") format("norse1"),
-    url("./norse/Norsebold.otf") format("norse2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  src: url(fonts/Norsebold.otf);
+  font-family: Norse-Bold;
 }
 
 body {
@@ -58,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .background {
@@ -67,22 +62,40 @@ h1, h2, h3, h4, h5, h6 {
 
 #first-column {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .odin-header {
     display: flex;
     flex-direction: row;
     position: absolute;
-    height: 10%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0 0 0 / 40%);
+    width: 100%;
+    margin-top: 30%;
 }
 
 .odin-logo {
-
+  height: 100px;
 }
 
-
 .odin-text {
-    font-family: "Norse", "serif";
+  font-family: 'Norse-Bold', serif;
+  color: white; 
+  font-size: 80px;
+}
+
+.credit {
+  font-size: small;
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  align-self: end;
+  margin-bottom: 10px;
+}
+
+#second-column{
 
 }
