@@ -1,20 +1,8 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-*:not(dialog) {
-  margin: 0;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-  }
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
 @font-face {
@@ -22,80 +10,62 @@
   font-family: Norse-Bold;
 }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+.image-sidebar {
+  width: 35%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
-input, button, textarea, select {
-  font: inherit;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-p {
-  text-wrap: pretty;
-}
-h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
-}
-
-#root, #__next {
-  isolation: isolate;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-.background {
-    z-index: -1;
-}
-
-#first-column {
-    display: flex;
-    flex-direction: row;
+.fern-background {
+  width: 100%;
+  height: inherit;
 }
 
 .odin-header {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    background: rgb(0 0 0 / 40%);
-    width: 100%;
-    margin-top: 30%;
+  margin-top: 12%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background: rgb(0 0 0 / 40%);
+  width: inherit;
+  height: 20%;
 }
 
 .odin-logo {
-  height: 100px;
+  width: 80px;
 }
 
-.odin-text {
-  font-family: 'Norse-Bold', serif;
-  color: white; 
-  font-size: 80px;
+.odin-logo-text {
+  font-family: 'Norse-Bold', Serif;
+  font-size: 5em;
+  display: flex;
+  color: white;
+}
+
+.footer-credit {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .credit {
-  font-size: small;
-  position: absolute;
   color: white;
-  width: 100%;
-  text-align: center;
-  align-self: end;
-  margin-bottom: 10px;
+  position: fixed;
+  font-size: small;
 }
 
-#second-column{
+a {
+  color: white;
+}
 
+content {
+  padding-left: 50px;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  flex-wrap: wrap;
 }
