@@ -19,16 +19,63 @@
         </div>
     </div>
     <content>
-        <h4>
-            This is not a real online service! You know you need something<br>
-            like this in your life to help you realize your deepest dreams.<br>
+        <div>
+        <h3>
+            This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            <br>
+            <br>
             Sign up <i>now</i> to get started.
             <br>
             <br>
             You <i>know</i> you want to.
             <br>
             <br>
-        </h4>
+            <form>
+
+            </form>
+        </h3>
+        </div>
+        <section class="form-container">
+            <h3>Let's do this!</h3>
+            <form action="/my-handling-form-page" method="post">
+                <div class="form-input-container">
+                <div class="first-row-form">
+                <p>
+                    <label for="first-name">FIRST NAME</label><br>
+                    <input type="text" id="first_name" name="first-name" required/>
+                </p>
+                <p>
+                    <label for="mail">EMAIL</label><br>
+                    <input type="email" id="email" name="email" required/>
+                </p>
+                <p>
+                    <label for="password">PASSWORD</label><br>
+                    <input type="password" id="password" name="password" required/>
+                </p>
+                </div>
+                <div class="second-row-form">
+                <p>
+                    <label for="last-name">LAST NAME</label><br>
+                    <input type="text" id="last-name" name="last-name" required/>
+                </p>
+                <p>
+                    <label for="number">PHONE NUMBER</label><br>
+                    <input type="tel" id="phone" name="phone" \
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                </p>
+                <p>
+                    <label for="password">CONFIRM PASSWORD</label><br>
+                    <input type="password" id="password" name="password" />
+                </p>
+                </div>
+                </div>
+            </section>            
+        </div>
+        <div>
+            <button>Create Account</button>
+            <p>Already have an account? <a class="login" href="url">Log in</a></p>
+        </div>
     </content>
 </body>
 </html>
