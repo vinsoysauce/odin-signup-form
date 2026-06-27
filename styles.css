@@ -64,25 +64,56 @@ a {
 }
 
 content {
-  padding-left: 30px;
-  padding-right: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 p {
   font-size: small;
 }
 
-h3 {
+.quotes {
   font-family: 'Roboto', sans-serif;
+  padding-left: 30px;
+  padding-right: 20%;
+}
+
+.form-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px 0 15px 0;
 }
 
 .form-input-container {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  padding-left: 30px;
+}
+
+legend {
+    padding-left: 30px;
+    font-weight: bold;
 }
 
 .login {
-  color: black;
+  color: #596D48;
   text-decoration: none;
+  font-weight: bolder;
+}
+
+.button-container {
+  padding-left: 30px;
+}
+
+button {
+  font-size: x-small;
+  font-weight: bold;
+  background-color: #596D48;
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+  width: 100px;
+  height: 30px;
 }
