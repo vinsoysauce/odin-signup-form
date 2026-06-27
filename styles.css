@@ -114,8 +114,13 @@ input {
   font-weight: bolder;
 }
 
-#password {
-  border: 1px solid red;
+input:focus {
+  outline: 1px solid blue;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#password:user-invalid {
+  outline: 1px solid red;
 }
 
 .button-container {
@@ -123,7 +128,7 @@ input {
   font-family: sans-serif;
 }
 
-button {
+.create-account {
   font-size: small;
   font-weight: bold;
   background-color: #596D48;

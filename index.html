@@ -52,7 +52,7 @@
                 <div class="second-row-form">
                 <p>
                     <label for="last_name">LAST NAME</label><br>
-                    <input type="text" id="last_name" name="last_name" required/>
+                    <input type="text" id="last_name" name="last_name" minlength="8" required/>
                 </p>
                 <p>
                     <label for="phone">PHONE NUMBER</label><br>
@@ -61,14 +61,14 @@
                 </p>
                 <p>
                     <label for="password">CONFIRM PASSWORD</label><br>
-                    <input type="password" id="password" name="password" />
+                    <input type="password" id="password" name="password" minlength="8" required/>
                 </p>
                 </div>
                 </div>
             </section>            
         </div>
         <div class="button-container">
-            <button>Create Account</button>
+            <input class="create-account" type="submit" value="Create Account" />
             <p>Already have an account? <a class="login" href="url">Log in</a></p>
         </div>
     </content>
